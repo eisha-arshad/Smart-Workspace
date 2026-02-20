@@ -1,0 +1,10 @@
+.container {
+  padding: 20px;
+  min-height: calc(100vh - 70px);
+  background: #f3f4f6;
+}
+
+/* Smooth UI */
+* {
+  transition: all 0.2s ease;
+}

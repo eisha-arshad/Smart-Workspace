@@ -1,0 +1,40 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card p {
+  color: gray;
+  font-size: 13px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.tech {
+  background: #3b82f6;
+}
+
+.fin {
+  background: #22c55e;
+}
+
+.per {
+  background: #f97316;
+}

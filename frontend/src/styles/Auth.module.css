@@ -1,0 +1,149 @@
+/* Container: full screen center */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fb, #e2e8f0);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card: compact height, centered */
+.card {
+  width: 360px;
+  padding: 25px 30px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: 0.3s;
+  max-height: 95%; /* Prevent overflow */
+  overflow: auto;  /* Scroll if content too large */
+}
+
+.card:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Labels */
+label {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Buttons */
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #5a67d8;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Link text */
+.link {
+  text-align: center;
+  margin-top: 8px;
+  cursor: pointer;
+  color: #667eea;
+  font-size: 14px;
+}
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.passwordInput {
+  padding-right: 40px; /* space for icon */
+}
+
+.togglePassword {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.togglePassword:hover {
+  color: #667eea;
+}
+
+/* Remember me */
+.rememberContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}
